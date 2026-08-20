@@ -1,9 +1,10 @@
 import './index.css';
+import HomePage from './pages/HomePage';
 
 function App() {
   return (
     <div>
-       {/* tomt */}
+       <HomePage />
     </div>
   );
 }
