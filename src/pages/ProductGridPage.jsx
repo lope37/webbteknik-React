@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class ProductDetailsPage extends Component {
+class ProductGridPage extends Component {
     render() {
         return (
             <>
