@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -7,39 +8,39 @@ function Footer() {
         <div className="footer-col">
           <h2 className="footer-heading">Information</h2>
           <ul className="footer-links">
-            <li><a href="/om-oss">Om oss →</a></li>
-            <li><a href="/kontakt">Showroom</a></li>
-            <li><a href="/under-konstruktion">Återförsäljare</a></li>
-            <li><a href="/under-konstruktion">Köpvillkor</a></li>
-            <li><a href="/under-konstruktion">CITES - Handelsregler</a></li>
-            <li><a href="/under-konstruktion">Om tillverkare</a></li>
-            <li><a href="/under-konstruktion">Klimatet &amp; gitarrer</a></li>
-            <li><a href="/under-konstruktion">Artister &amp; band</a></li>
-            <li><a href="/under-konstruktion">Önskemål</a></li>
-            <li><a href="/under-konstruktion">FAQ</a></li>
+            <li><Link to="/om-oss">Om oss →</Link></li>
+            <li><Link to="/kontakt">Showroom</Link></li>
+            <li><Link to="/under-konstruktion">Återförsäljare</Link></li>
+            <li><Link to="/under-konstruktion">Köpvillkor</Link></li>
+            <li><Link to="/under-konstruktion">CITES - Handelsregler</Link></li>
+            <li><Link to="/under-konstruktion">Om tillverkare</Link></li>
+            <li><Link to="/under-konstruktion">Klimatet &amp; gitarrer</Link></li>
+            <li><Link to="/under-konstruktion">Artister &amp; band</Link></li>
+            <li><Link to="/under-konstruktion">Önskemål</Link></li>
+            <li><Link to="/under-konstruktion">FAQ</Link></li>
           </ul>
         </div>
 
         <div className="footer-col">
           <h2 className="footer-heading">Tips &amp; Tricks</h2>
           <ul className="footer-links">
-            <li><a href="/under-konstruktion">Gitarrens delar</a></li>
-            <li><a href="/under-konstruktion">Så skapas tonen</a></li>
-            <li><a href="/under-konstruktion">Gitarrteori</a></li>
-            <li><a href="/under-konstruktion">Underhåll &amp; justering</a></li>
-            <li><a href="/under-konstruktion">Uppgradering</a></li>
-            <li><a href="/under-konstruktion">Problemlösning</a></li>
-            <li><a href="/under-konstruktion">Skapa rätt sound</a></li>
-            <li><a href="/under-konstruktion">Spelövningar</a></li>
-            <li><a href="/under-konstruktion">Test av instrument</a></li>
+            <li><Link to="/under-konstruktion">Gitarrens delar</Link></li>
+            <li><Link to="/under-konstruktion">Så skapas tonen</Link></li>
+            <li><Link to="/under-konstruktion">Gitarrteori</Link></li>
+            <li><Link to="/under-konstruktion">Underhåll &amp; justering</Link></li>
+            <li><Link to="/under-konstruktion">Uppgradering</Link></li>
+            <li><Link to="/under-konstruktion">Problemlösning</Link></li>
+            <li><Link to="/under-konstruktion">Skapa rätt sound</Link></li>
+            <li><Link to="/under-konstruktion">Spelövningar</Link></li>
+            <li><Link to="/under-konstruktion">Test av instrument</Link></li>
             <li><a href="https://www.youtube.com/results?search_query=best+guitarists+of+all+time" target="_blank" rel="noopener noreferrer">Världens främsta gitarrister ↗</a></li>
-            <li><a href="/under-konstruktion">Sköna band &amp; artister</a></li>
+            <li><Link to="/under-konstruktion">Sköna band &amp; artister</Link></li>
           </ul>
         </div>
 
         <div className="footer-col">
           <h2 className="footer-heading">
-            <a href="/kontakt" className="footer-contact-link">Kontakta oss →</a>
+            <Link to="/kontakt" className="footer-contact-link">Kontakta oss →</Link>
           </h2>
         </div>
       </div>
