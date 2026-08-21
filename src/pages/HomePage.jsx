@@ -1,34 +1,13 @@
 import React, { Component } from 'react';
 import '../styles/styles.css';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 class HomePage extends Component {
     render() {
         return (
             <>
-                { }
-
-                <header className="header">
-                    <div className="wrapper header-grid">
-                        <div className="header-left">
-                            <button className="menu-toggle" aria-label="Öppna meny"><img src="assets/menu.svg" alt="" width="32" height="32" /></button>
-                            <a href="index.html" className="logo">Guitarnet</a>
-                        </div>
-                        <nav className="nav" aria-label="Huvudmeny">
-                            <ul className="nav-list">
-                                <li><a href="produktgrid.html" className="nav-link">Gitarrer</a></li>
-                                <li><a href="produktgrid.html" className="nav-link">Basar</a></li>
-                                <li><a href="produktgrid.html" className="nav-link">Akustiskt</a></li>
-                                <li><a href="produktgrid.html" className="nav-link">Amps &amp; Effekter</a></li>
-                                <li><a href="produktgrid.html" className="nav-link">Tillbehör &amp; Övrigt</a></li>
-                            </ul>
-                        </nav>
-                        <div className="header-icons">
-                            <a href="under-konstruktion.html" className="icon-link" aria-label="Sök"><img src="assets/search.svg" alt="" width="32" height="32" /></a>
-                            <a href="under-konstruktion.html" className="icon-link" aria-label="Kundvagn"><img src="assets/cart.svg" alt="" width="32" height="32" /></a>
-                        </div>
-                    </div>
-                </header>
-
+                <Header />
 
                 <main>
                     <section className="hero" aria-label="Välkommen" />
@@ -44,11 +23,11 @@ class HomePage extends Component {
                             </div>
                             <h1 className="hero-title">Bäst ton för pengarna.</h1>
                             <p className="hero-subtitle">Kvalitetsgitarrer till bra priser. Handplockade märken från Sverige och världen.</p>
-                            <div style="display: flex; gap: 12px; max-width: 440px; width: 100%; margin-bottom: 20px;">
-                                <button id="hello-btn" className="btn-outline" style="width: 50%; max-width: none; margin: 0;">Visa meddelande</button>
-                                <button id="animate-btn" className="btn-outline" style="width: 50%; max-width: none; margin: 0;">Animera text</button>
+                            <div style={{ display: 'flex', gap: '12px', maxWidth: '440px', width: '100%', marginBottom: '20px' }}>
+                                <button id="hello-btn" className="btn-outline" style={{ width: '50%', maxWidth: 'none', margin: 0 }}>Visa meddelande</button>
+                                <button id="animate-btn" className="btn-outline" style={{ width: '50%', maxWidth: 'none', margin: 0 }}>Animera text</button>
                             </div>
-                            <div id="random-container" style="margin-top: 20px; color: #ffffff;"></div>
+                            <div id="random-container" style={{ marginTop: '20px', color: '#ffffff' }}></div>
                             <a href="produktgrid.html" className="btn-primary">Utforska nytt →</a>
                         </div>
                     </div>
@@ -193,7 +172,6 @@ class HomePage extends Component {
                             <p className="section-label">Våra varumärken</p>
                             <h2 className="brand-category-title" id="el-heading">Elgitarrer</h2>
                             <div className="brand-cards-grid">
-
                                 <article className="brand-card">
                                     <div className="brand-logo-box">
                                         <img src="assets/group-logo.svg" alt="Green Guitars logotyp" />
@@ -226,7 +204,6 @@ class HomePage extends Component {
                                         <a href="produktgrid.html" className="read-more">Läs mer <img src="assets/vector-arrow.svg" alt="" className="arrow-inline" /></a>
                                     </div>
                                 </article>
-
                             </div>
                         </div>
                     </section>
@@ -343,44 +320,7 @@ class HomePage extends Component {
 
                 </main>
 
-                <footer className="footer">
-                    <div className="wrapper footer-grid">
-                        <div className="footer-col">
-                            <h2 className="footer-heading">Information</h2>
-                            <ul className="footer-links">
-                                <li><a href="om-oss.html">Om oss →</a></li>
-                                <li><a href="kontakt.html">Showroom</a></li>
-                                <li><a href="under-konstruktion.html">Återförsäljare</a></li>
-                                <li><a href="under-konstruktion.html">Köpvillkor</a></li>
-                                <li><a href="under-konstruktion.html">CITES - Handelsregler</a></li>
-                                <li><a href="under-konstruktion.html">Om tillverkare</a></li>
-                                <li><a href="under-konstruktion.html">Klimatet &amp; gitarrer</a></li>
-                                <li><a href="under-konstruktion.html">Artister &amp; band</a></li>
-                                <li><a href="under-konstruktion.html">Önskemål</a></li>
-                                <li><a href="under-konstruktion.html">FAQ</a></li>
-                            </ul>
-                        </div>
-                        <div className="footer-col">
-                            <h2 className="footer-heading">Tips &amp; Tricks</h2>
-                            <ul className="footer-links">
-                                <li><a href="under-konstruktion.html">Gitarrens delar</a></li>
-                                <li><a href="under-konstruktion.html">Så skapas tonen</a></li>
-                                <li><a href="under-konstruktion.html">Gitarrteori</a></li>
-                                <li><a href="under-konstruktion.html">Underhåll &amp; justering</a></li>
-                                <li><a href="under-konstruktion.html">Uppgradering</a></li>
-                                <li><a href="under-konstruktion.html">Problemlösning</a></li>
-                                <li><a href="under-konstruktion.html">Skapa rätt sound</a></li>
-                                <li><a href="under-konstruktion.html">Spelövningar</a></li>
-                                <li><a href="under-konstruktion.html">Test av instrument</a></li>
-                                <li><a href="https://www.youtube.com/results?search_query=best+guitarists+of+all+time" target="_blank" rel="noopener noreferrer">Världens främsta gitarrister ↗</a></li>
-                                <li><a href="under-konstruktion.html">Sköna band &amp; artister</a></li>
-                            </ul>
-                        </div>
-                        <div className="footer-col">
-                            <h2 className="footer-heading"><a href="kontakt.html" className="footer-contact-link">Kontakta oss →</a></h2>
-                        </div>
-                    </div>
-                </footer>
+                <Footer />
             </>
         );
     }
