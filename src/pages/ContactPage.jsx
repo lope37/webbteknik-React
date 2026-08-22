@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MathCaptcha from '../components/MathCaptcha';
 import { Link } from 'react-router-dom';
 import '../styles/styles.css';
 import Header from '../components/Header';
@@ -52,7 +53,7 @@ class ContactPage extends Component {
                                             <input type="checkbox" id="newsletter" name="newsletter" />
                                             <label htmlFor="newsletter">Ja, jag vill ta emot nyhetsbrev med erbjudanden</label>
                                         </div>
-                                        <button type="submit" className="btn-primary btn-submit">Skicka meddelande →</button>
+                                        <MathCaptcha buttonText="Skicka meddelande →" onSuccess={() => alert('Meddelandet har skickats.')} />
                                     </form>
                                 </div>
 
