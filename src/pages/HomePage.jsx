@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/styles.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -10,28 +11,31 @@ class HomePage extends Component {
                 <Header />
 
                 <main>
-                    <section className="hero" aria-label="Välkommen" />
-                    <div className="hero-bg">
-                        <img src="assets/gitarr.png" alt="" className="hero-bg-img" />
-                    </div>
-                    <img src="assets/hero.svg" alt="" className="hero-overlay" aria-hidden="true" />
-                    <div className="wrapper hero-content-wrapper">
-                        <div className="hero-content">
-                            <div className="hero-icons" aria-hidden="true">
-                                <img src="assets/music-solid.svg" alt="" className="music-icon music-icon-1" />
-                                <img src="assets/music-solid2.svg" alt="" className="music-icon music-icon-2" />
-                            </div>
-                            <h1 className="hero-title">Bäst ton för pengarna.</h1>
-                            <p className="hero-subtitle">Kvalitetsgitarrer till bra priser. Handplockade märken från Sverige och världen.</p>
-                            <div style={{ display: 'flex', gap: '12px', maxWidth: '440px', width: '100%', marginBottom: '20px' }}>
-                                <button id="hello-btn" className="btn-outline" style={{ width: '50%', maxWidth: 'none', margin: 0 }}>Visa meddelande</button>
-                                <button id="animate-btn" className="btn-outline" style={{ width: '50%', maxWidth: 'none', margin: 0 }}>Animera text</button>
-                            </div>
-                            <div id="random-container" style={{ marginTop: '20px', color: '#ffffff' }}></div>
-                            <a href="produktgrid.html" className="btn-primary">Utforska nytt →</a>
+                    <section className="hero" aria-label="Välkommen">
+                        <div className="hero-bg">
+                            <img src="/assets/gitarr.png" alt="" className="hero-bg-img" />
                         </div>
-                    </div>
-                    <section />
+
+                        <div className="hero-overlay" aria-hidden="true" />
+
+                        <div className="wrapper hero-content-wrapper">
+                            <div className="hero-content">
+                                <div className="hero-icons" aria-hidden="true">
+                                    <img src="/assets/music-solid.svg" alt="" className="music-icon music-icon-1" />
+                                    <img src="/assets/music-solid2.svg" alt="" className="music-icon music-icon-2" />
+                                </div>
+
+                                <h1 className="hero-title">Bäst ton för pengarna.</h1>
+                                <p className="hero-subtitle">
+                                    Kvalitetsgitarrer till bra priser. Handplockade märken från Sverige och världen.
+                                </p>
+
+                                <Link to="/produkter" className="btn-primary">
+                                    Utforska nytt →
+                                </Link>
+                            </div>
+                        </div>
+                    </section>
 
                     <section className="featured-products" aria-labelledby="featured-heading">
                         <div className="wrapper">
@@ -55,7 +59,7 @@ class HomePage extends Component {
                                         <p className="product-name-thin">Green Guitars Mustang 11</p>
                                         <p className="product-price-large">18 995 SEK</p>
                                         <p className="product-desc">En modern mustang-stil gitarr med fantastisk ton och spelbarhet. Tillverkad med noggrant utvalda material.</p>
-                                        <a href="produkt.html" className="btn-outline">Läs mer →</a>
+                                        <Link to="/produkt" className="btn-outline">Läs mer →</Link>
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +76,7 @@ class HomePage extends Component {
                                 </div>
                             </div>
                             <div className="products-grid">
-                                <a href="produkt.html" className="product-card-link">
+                                <Link to="/produkt" className="product-card-link">
                                     <article className="product-card">
                                         <div className="product-card-image">
                                             <img src="assets/image10.png" alt="Green ST Classic elgitarr" className="card-img-front" />
@@ -84,8 +88,8 @@ class HomePage extends Component {
                                             <p className="product-card-colors">5 färger <img src="assets/color-dots.svg" alt="Tillgängliga färger" width="84" height="12" className="color-dots" /></p>
                                         </div>
                                     </article>
-                                </a>
-                                <a href="produkt.html" className="product-card-link">
+                                </Link>
+                                <Link to="/produkt" className="product-card-link">
                                     <article className="product-card">
                                         <div className="product-card-image">
                                             <img src="assets/image10.png" alt="Green ST Classic elgitarr" className="card-img-front" />
@@ -97,8 +101,8 @@ class HomePage extends Component {
                                             <p className="product-card-colors">5 färger <img src="assets/color-dots.svg" alt="Tillgängliga färger" width="84" height="12" className="color-dots" /></p>
                                         </div>
                                     </article>
-                                </a>
-                                <a href="produkt.html" className="product-card-link">
+                                </Link>
+                                <Link to="/produkt" className="product-card-link">
                                     <article className="product-card">
                                         <div className="product-card-image">
                                             <img src="assets/image10.png" alt="Green ST Classic elgitarr" className="card-img-front" />
@@ -110,8 +114,8 @@ class HomePage extends Component {
                                             <p className="product-card-colors">5 färger <img src="assets/color-dots.svg" alt="Tillgängliga färger" width="84" height="12" className="color-dots" /></p>
                                         </div>
                                     </article>
-                                </a>
-                                <a href="produkt.html" className="product-card-link">
+                                </Link>
+                                <Link to="/produkt" className="product-card-link">
                                     <article className="product-card">
                                         <div className="product-card-image">
                                             <img src="assets/image10.png" alt="Green ST Classic elgitarr" className="card-img-front" />
@@ -123,10 +127,10 @@ class HomePage extends Component {
                                             <p className="product-card-colors">5 färger <img src="assets/color-dots.svg" alt="Tillgängliga färger" width="84" height="12" className="color-dots" /></p>
                                         </div>
                                     </article>
-                                </a>
+                                </Link>
                             </div>
                             <div className="see-all-link">
-                                <a href="produktgrid.html">Se alla nyheter <img src="assets/vector-arrow.svg" alt="" className="arrow-inline" /></a>
+                                <Link to="/produkter">Se alla nyheter <img src="/assets/vector-arrow.svg" alt="" className="arrow-inline" /></Link>
                             </div>
                         </div>
                     </section>
@@ -138,11 +142,11 @@ class HomePage extends Component {
                                 <div className="form-header">
                                     <h2 className="form-title" id="form-heading">Välj din form</h2>
                                     <div className="instrument-tabs">
-                                        <a href="produktgrid.html" className="instrument-tab active" aria-current="true">Gitarr
+                                        <Link to="/produkter" className="instrument-tab active" aria-current="true">Gitarr
                                             <span className="tab-underline" aria-hidden="true"><img src="assets/line1.svg" alt="" /></span>
-                                        </a>
-                                        <a href="produktgrid.html" className="instrument-tab">Bas</a>
-                                        <a href="produktgrid.html" className="instrument-tab">Akustisk</a>
+                                        </Link>
+                                        <Link to="/produkter" className="instrument-tab">Bas</Link>
+                                        <Link to="/produkter" className="instrument-tab">Akustisk</Link>
                                     </div>
                                     <div className="arrows">
                                         <button className="arrow-btn arrow-left" aria-label="Föregående form"><img src="assets/arrow-left.svg" alt="" width="42" height="42" /></button>
@@ -179,7 +183,7 @@ class HomePage extends Component {
                                     <div className="brand-info">
                                         <h3 className="brand-name"><strong>Green Guitars</strong> <span className="brand-name-light">– A new brand from Sweden</span></h3>
                                         <p className="brand-desc">Green Guitars tillverkas i små serier med stort fokus på utseende, spelbarhet och ljud. Helt enkelt riktigt bra gitarrer. Dessutom jobbar vi för att hålla låga priser. Green Guitars matchar betydligt dyrare gitarrer. För närvarande tillverkas alla våra modeller i Asien av två olika gitarrbyggare.</p>
-                                        <a href="produktgrid.html" className="read-more">Läs mer <img src="assets/vector-arrow.svg" alt="" className="arrow-inline" /></a>
+                                        <Link to="/produkter" className="read-more">Läs mer <img src="/assets/vector-arrow.svg" alt="" className="arrow-inline" /></Link>
                                     </div>
                                 </article>
 
@@ -190,7 +194,7 @@ class HomePage extends Component {
                                     <div className="brand-info">
                                         <h3 className="brand-name"><strong>Sonnemo Guitars</strong> <span className="brand-name-light">– Handmade in Sweden</span></h3>
                                         <p className="brand-desc">Japanska Fujijenfabriken startade 1960. På 80-talet var FUJIGEN världens största gitarrtillverkare. Man tillverkar åt många av de stora märkena och är erkänt väldigt skickliga gitarrbyggare. Fujigen har fortsatt att utveckla och förfina sin gitarrtillverkning och tagit fram ett eget gitarrmärke med en kvalité som slår det mesta.</p>
-                                        <a href="produktgrid.html" className="read-more">Läs mer <img src="assets/vector-arrow.svg" alt="" className="arrow-inline" /></a>
+                                        <Link to="/produkter" className="read-more">Läs mer <img src="/assets/vector-arrow.svg" alt="" className="arrow-inline" /></Link>
                                     </div>
                                 </article>
 
@@ -201,7 +205,7 @@ class HomePage extends Component {
                                     <div className="brand-info">
                                         <h3 className="brand-name"><strong>FGN</strong> <span className="brand-name-light">– Made in Japan</span></h3>
                                         <p className="brand-desc">Japanska Fujijenfabriken startade 1960. På 80-talet var FUJIGEN världens största gitarrtillverkare. Man tillverkar åt många av de stora märkena och är erkänt väldigt skickliga gitarrbyggare. Fujigen har fortsatt att utveckla och förfina sin gitarrtillverkning och tagit fram ett eget gitarrmärke med en kvalité som slår det mesta. Förmodligen världens främsta tillverkare.</p>
-                                        <a href="produktgrid.html" className="read-more">Läs mer <img src="assets/vector-arrow.svg" alt="" className="arrow-inline" /></a>
+                                        <Link to="/produkter" className="read-more">Läs mer <img src="/assets/vector-arrow.svg" alt="" className="arrow-inline" /></Link>
                                     </div>
                                 </article>
                             </div>
@@ -279,7 +283,7 @@ class HomePage extends Component {
                                     <div className="brand-info">
                                         <h3 className="brand-name"><strong>Dowina</strong> <span className="brand-name-light">– Made in Europe</span></h3>
                                         <p className="brand-desc">Vid det historiska slottet Dowina – beläget mellan Bratislava (Slovakien) och Wien (Österrike) – startade man Dowina år 1979. Från början tillverkades violiner. Inspirerade av framgångarna med violintillverkningen föddes idén att tillverka akustiska gitarrer. Där varje gitarr är perfekt och unik, vilket resulterar i hög spelkomfort och mycket fin ton.</p>
-                                        <a href="produktgrid.html" className="read-more">Läs mer <img src="assets/vector-arrow.svg" alt="" className="arrow-inline" /></a>
+                                        <Link to="/produkter" className="read-more">Läs mer <img src="/assets/vector-arrow.svg" alt="" className="arrow-inline" /></Link>
                                     </div>
                                 </article>
 
@@ -299,7 +303,7 @@ class HomePage extends Component {
                                     <div className="brand-info">
                                         <h3 className="brand-name"><strong>Lundgren Pickups</strong> <span className="brand-name-light">– Made in Sweden</span></h3>
                                         <p className="brand-desc">Johan Lundgren har vunnit stor respekt världen över för sin förmåga att tillverka mickar som plockar fram det allra bästa ur en gitarr. Hela processen är ett hantverk och slutresultatet blir något över det vanliga.</p>
-                                        <a href="produktgrid.html" className="read-more">Läs mer <img src="assets/vector-arrow.svg" alt="" className="arrow-inline" /></a>
+                                        <Link to="/produkter" className="read-more">Läs mer <img src="/assets/vector-arrow.svg" alt="" className="arrow-inline" /></Link>
                                     </div>
                                 </article>
 

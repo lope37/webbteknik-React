@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/styles.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -17,7 +18,7 @@ class ProductsPage extends Component {
 
                             {/* Breadcrumb */}
                             <nav className="breadcrumb" aria-label="Brödsmulor">
-                                <p><a href="index.html">Startsida</a>/<a href="produktgrid.html">Gitarrer</a>/<a href="produktgrid.html">Stratocaster</a>/<span>Green ST Classic</span></p>
+                                <p><Link to="/">Startsida</Link>/<Link to="/produkter">Gitarrer</Link>/<Link to="/produkter">Stratocaster</Link>/<span>Green ST Classic</span></p>
                             </nav>
 
                             {/* Produkt top: gallery, VÄNSTER: beskrivning, HÖGER: sticky info */}
@@ -50,7 +51,7 @@ class ProductsPage extends Component {
                                         <p>Komponenterna håller lika hög klass. Som övriga Green Guitars Comfort Series är den lättspelad och skön med en smal och tunn hals. Finns i färgerna 2- eller 3- tons sunburst med lönn eller "rosewood" greppbräda.</p>
                                         <p>I Green ST Classic sitter våra egna Green High Output Pickuper - låter riktigt bra. Mickarna har samma konstruktion som P90. Det blir en lite varrmare, fetare ton än med traditionella stratamickar. Mer botten, mer mid och något avskalad diskant. De svarar ännu bättre på dist. Det går att få till riktigt sköna solo- och kompljud.</p>
                                         <p>Vill man ha ett riktigt klassljud väljer man med svenska handvirade Lundgren 60s Vintage pickuper. Grymt ljud. 60-tals inspirerat - mer mottagliga för dist än 50 -tals pickuper.</p>
-                                        <p><a href="under-konstruktion.html">Läs mer om Green Guitars →</a></p>
+                                        <p><Link to="/under-konstruktion">Läs mer om Green Guitars →</Link></p>
                                     </div>
                                 </div>
 
@@ -80,7 +81,7 @@ class ProductsPage extends Component {
                                         </div>
 
                                         <div className="product-actions">
-                                            <a href="under-konstruktion.html" className="btn-outline-product">Lägg till i varukorg</a>
+                                            <Link to="/under-konstruktion" className="btn-outline-product">Lägg till i varukorg</Link>
                                         </div>
                                     </div>
                                 </aside>
@@ -176,58 +177,58 @@ class ProductsPage extends Component {
                                 </div>
                             </div>
                             <div className="products-grid">
-                                <a href="produkt.html" className="product-card-link">
+                                <Link to="/produkt" className="product-card-link">
                                     <article className="product-card">
                                         <div className="product-card-image">
-                                            <img src="assets/image10.png" alt="Green ST Classic elgitarr" className="card-img-front" />
-                                            <img src="assets/image11.png" alt="Green ST Classic baksida" className="card-img-back" />
+                                            <img src="/assets/image10.png" alt="Green ST Classic elgitarr" className="card-img-front" />
+                                            <img src="/assets/image11.png" alt="Green ST Classic baksida" className="card-img-back" />
                                         </div>
                                         <div className="product-card-info">
                                             <h3 className="product-card-name">Green ST Classic</h3>
                                             <p className="product-card-price">4 590 SEK</p>
-                                            <p className="product-card-colors">5 färger <img src="assets/color-dots.svg" alt="Tillgängliga färger" width="84" height="12" className="color-dots" /></p>
+                                            <p className="product-card-colors">5 färger <img src="/assets/color-dots.svg" alt="Tillgängliga färger" width="84" height="12" className="color-dots" /></p>
                                         </div>
                                     </article>
-                                </a>
-                                <a href="produkt.html" className="product-card-link">
+                                </Link>
+                                <Link to="/produkt" className="product-card-link">
                                     <article className="product-card">
                                         <div className="product-card-image">
-                                            <img src="assets/image10.png" alt="Green ST Classic elgitarr" className="card-img-front" />
-                                            <img src="assets/image11.png" alt="Green ST Classic baksida" className="card-img-back" />
+                                            <img src="/assets/image10.png" alt="Green ST Classic elgitarr" className="card-img-front" />
+                                            <img src="/assets/image11.png" alt="Green ST Classic baksida" className="card-img-back" />
                                         </div>
                                         <div className="product-card-info">
                                             <h3 className="product-card-name">Green ST Classic</h3>
                                             <p className="product-card-price">4 590 SEK</p>
-                                            <p className="product-card-colors">5 färger <img src="assets/color-dots.svg" alt="Tillgängliga färger" width="84" height="12" className="color-dots" /></p>
+                                            <p className="product-card-colors">5 färger <img src="/assets/color-dots.svg" alt="Tillgängliga färger" width="84" height="12" className="color-dots" /></p>
                                         </div>
                                     </article>
-                                </a>
-                                <a href="produkt.html" className="product-card-link">
+                                </Link>
+                                <Link to="/produkt" className="product-card-link">
                                     <article className="product-card">
                                         <div className="product-card-image">
-                                            <img src="assets/image10.png" alt="Green ST Classic elgitarr" className="card-img-front" />
-                                            <img src="assets/image11.png" alt="Green ST Classic baksida" className="card-img-back" />
+                                            <img src="/assets/image10.png" alt="Green ST Classic elgitarr" className="card-img-front" />
+                                            <img src="/assets/image11.png" alt="Green ST Classic baksida" className="card-img-back" />
                                         </div>
                                         <div className="product-card-info">
                                             <h3 className="product-card-name">Green ST Classic</h3>
                                             <p className="product-card-price">4 590 SEK</p>
-                                            <p className="product-card-colors">5 färger <img src="assets/color-dots.svg" alt="Tillgängliga färger" width="84" height="12" className="color-dots" /></p>
+                                            <p className="product-card-colors">5 färger <img src="/assets/color-dots.svg" alt="Tillgängliga färger" width="84" height="12" className="color-dots" /></p>
                                         </div>
                                     </article>
-                                </a>
-                                <a href="produkt.html" className="product-card-link">
+                                </Link>
+                                <Link to="/produkt" className="product-card-link">
                                     <article className="product-card">
                                         <div className="product-card-image">
-                                            <img src="assets/image10.png" alt="Green ST Classic elgitarr" className="card-img-front" />
-                                            <img src="assets/image11.png" alt="Green ST Classic baksida" className="card-img-back" />
+                                            <img src="/assets/image10.png" alt="Green ST Classic elgitarr" className="card-img-front" />
+                                            <img src="/assets/image11.png" alt="Green ST Classic baksida" className="card-img-back" />
                                         </div>
                                         <div className="product-card-info">
                                             <h3 className="product-card-name">Green ST Classic</h3>
                                             <p className="product-card-price">4 590 SEK</p>
-                                            <p className="product-card-colors">5 färger <img src="assets/color-dots.svg" alt="Tillgängliga färger" width="84" height="12" className="color-dots" /></p>
+                                            <p className="product-card-colors">5 färger <img src="/assets/color-dots.svg" alt="Tillgängliga färger" width="84" height="12" className="color-dots" /></p>
                                         </div>
                                     </article>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </section>

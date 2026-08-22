@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/styles.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -13,7 +14,7 @@ class AboutPage extends Component {
                     <section className="about-section" aria-labelledby="about-heading">
                         <div className="wrapper">
                             <nav className="breadcrumb" aria-label="Brödsmulor">
-                                <p><a href="index.html">Startsida</a>/<span>Om oss</span></p>
+                                <p><Link to="/">Startsida</Link>/<span>Om oss</span></p>
                             </nav>
                             <div className="about-grid">
                                 <div className="about-text">
@@ -36,12 +37,12 @@ class AboutPage extends Component {
                                     <h2 className="section-title" id="about-showroom">Vårt showroom</h2>
                                     <p>Besök gärna vårt showroom i Göteborg där du kan provspela alla våra gitarrer. Vi bokar gärna in en tid så att du får den uppmärksamhet du förtjänar.
                                         <br />
-                                        <a href="kontakt.html">Kontakta oss för att boka tid →</a>
+                                        <Link to="/kontakt">Kontakta oss för att boka tid →</Link>
                                     </p>
                                 </div>
                                 <aside className="about-sidebar">
                                     <div className="about-image-box">
-                                        <img src="assets/gitarr.png" alt="Gitarrer i vårt showroom" />
+                                        <img src="/assets/gitarr.png" alt="Gitarrer i vårt showroom" />
                                     </div>
                                     <div className="about-fact-box">
                                         <h3>Guitarnet i siffror</h3>
@@ -66,9 +67,9 @@ class AboutPage extends Component {
                             <h2 className="section-title" id="video-heading">Se en rundtur i vårt showroom</h2>
                             <p className="section-intro">Kom in och känn atmosfären i vår butik.</p>
                             <div className="video-container">
-                                <video controls poster="assets/gitarr.png" style={{ width: '100%' }}>
-                                    <source src="assets/showroom.mp4" type="video/mp4" />
-                                    <p>Din webbläsare stöder inte videouppspelning. <a href="assets/showroom.mp4">Ladda ner videon istället</a>.</p>
+                                <video controls poster="/assets/gitarr.png" style={{ width: '100%' }}>
+                                    <source src="/assets/showroom.mp4" type="video/mp4" />
+                                    <p>Din webbläsare stöder inte videouppspelning. <a href="/assets/showroom.mp4">Ladda ner videon istället</a>.</p>
                                 </video>
                             </div>
                         </div>

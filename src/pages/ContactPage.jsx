@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/styles.css';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -13,7 +14,7 @@ class ContactPage extends Component {
                     <section className="contact-section" aria-labelledby="contact-heading">
                         <div className="wrapper">
                             <nav className="breadcrumb" aria-label="Brödsmulor">
-                                <p><a href="index.html">Startsida</a>/<span>Kontakt</span></p>
+                                <p><Link to="/">Startsida</Link>/<span>Kontakt</span></p>
                             </nav>
                             <div className="contact-grid">
                                 <div className="contact-form-wrapper">
