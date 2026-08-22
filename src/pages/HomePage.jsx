@@ -16,7 +16,7 @@ class HomePage extends Component {
                             <img src="/assets/gitarr.png" alt="" className="hero-bg-img" />
                         </div>
 
-                        <div className="hero-overlay" aria-hidden="true" />
+                        <img src="assets/hero.svg" alt="" class="hero-overlay" aria-hidden="true"></img>
 
                         <div className="wrapper hero-content-wrapper">
                             <div className="hero-content">
