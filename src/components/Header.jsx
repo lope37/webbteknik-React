@@ -9,7 +9,7 @@ function Header() {
           <button className="menu-toggle" aria-label="Öppna meny">
             <img src="/assets/menu.svg" alt="" width="32" height="32" />
           </button>
-          <Link to="/" className="logo">Guitarnet</Link>
+          <Link to="/" className="logo" onClick={() => window.scrollTo(0, 0)} >Guitarnet</Link>
         </div>
 
         <nav className="nav" aria-label="Huvudmeny">
